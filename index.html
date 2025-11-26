@@ -4,5 +4,57 @@
     <p>こんにちは！プログラミング勉強中です。</p>
     <p>趣味：読書とゲーム</p>
     <p>目標：Webページを作れるようになること</p>
+    <h1>自己紹介クイズ</h1>
+
+    <!-- Q1 -->
+    <p>Q1. 私の趣味は何でしょう？</p>
+    <button onclick="checkAnswer1('A')">映画</button>
+    <button onclick="checkAnswer1('B')">ゲーム</button>
+    <button onclick="checkAnswer1('C')">読書</button>
+    <p id="result1"></p>
+
+    <!-- Q2 -->
+    <p>Q2. 私の目標は何でしょう？</p>
+    <button onclick="checkAnswer2('A')">旅行に行く</button>
+    <button onclick="checkAnswer2('B')">Webページを作れるようになる</button>
+    <button onclick="checkAnswer2('C')">スポーツ選手になる</button>
+    <p id="result2"></p>
+
+    <!-- Q3 -->
+    <p>Q3. 私の好きな食べ物は何でしょう？</p>
+    <button onclick="checkAnswer3('A')">寿司</button>
+    <button onclick="checkAnswer3('B')">ピザ</button>
+    <button onclick="checkAnswer3('C')">ラーメン</button>
+    <p id="result3"></p>
+
+    <script>
+      // Q1 正解は B
+      function checkAnswer1(answer) {
+        if(answer === 'B') {
+          document.getElementById('result1').innerText = "正解！🎉";
+        } else {
+          document.getElementById('result1').innerText = "不正解…";
+        }
+      }
+
+      // Q2 正解は B
+      function checkAnswer2(answer) {
+        if(answer === 'B') {
+          document.getElementById('result2').innerText = "正解！🎉";
+        } else {
+          document.getElementById('result2').innerText = "不正解…";
+        }
+      }
+
+      // Q3 正解は A
+      function checkAnswer3(answer) {
+        if(answer === 'A') {
+          document.getElementById('result3').innerText = "正解！🎉";
+        } else {
+          document.getElementById('result3').innerText = "不正解…";
+        }
+      }
+    </script>
+
   </body>
 </html>
