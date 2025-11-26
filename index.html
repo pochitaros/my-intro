@@ -1,10 +1,21 @@
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>私の自己紹介ページ</title>
+  </head>
   <body>
+    <!-- 自己紹介 -->
     <h1>私の自己紹介</h1>
     <p>こんにちは！プログラミング勉強中です。</p>
     <p>趣味：読書とゲーム</p>
     <p>目標：Webページを作れるようになること</p>
-    <h1>自己紹介クイズ</h1>
+
+    <!-- 画像 -->
+    <p>私の好きな動物：</p>
+    <img src="dog.jpg" alt="チワワ" width="200">
+
+    <!-- 自己紹介クイズ -->
+    <h2>自己紹介クイズ</h2>
 
     <!-- Q1 -->
     <p>Q1. 私の趣味は何でしょう？</p>
@@ -28,33 +39,15 @@
     <p id="result3"></p>
 
     <script>
-      // Q1 正解は B
       function checkAnswer1(answer) {
-        if(answer === 'B') {
-          document.getElementById('result1').innerText = "正解！🎉";
-        } else {
-          document.getElementById('result1').innerText = "不正解…";
-        }
+        document.getElementById('result1').innerText = (answer==='B') ? "正解！🎉" : "不正解…";
       }
-
-      // Q2 正解は B
       function checkAnswer2(answer) {
-        if(answer === 'B') {
-          document.getElementById('result2').innerText = "正解！🎉";
-        } else {
-          document.getElementById('result2').innerText = "不正解…";
-        }
+        document.getElementById('result2').innerText = (answer==='B') ? "正解！🎉" : "不正解…";
       }
-
-      // Q3 正解は A
       function checkAnswer3(answer) {
-        if(answer === 'A') {
-          document.getElementById('result3').innerText = "正解！🎉";
-        } else {
-          document.getElementById('result3').innerText = "不正解…";
-        }
+        document.getElementById('result3').innerText = (answer==='A') ? "正解！🎉" : "不正解…";
       }
     </script>
-
   </body>
 </html>
